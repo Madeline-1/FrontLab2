@@ -1,0 +1,95 @@
+/* Годинник */
+.clock {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    background-color: #f2f2f2;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.minute-hand {
+    width: 6px;
+    height: 90px;
+    background-color: black;
+}
+
+.hour-hand {
+    width: 70px;
+    height: 6px;
+    background-color: black;
+}
+
+/* Перший через top і left. */
+.position-clock div {
+    position: absolute;
+}
+
+.position-clock .top-dot {
+    top: 7px;
+    left: 80px;
+}
+
+.position-clock .right-dot {
+    top: 80px;
+    left: 153px;
+}
+
+.position-clock .bottom-dot {
+    top: 153px;
+    left: 80px;
+}
+
+.position-clock .left-dot {
+    top: 80px;
+    left: 7px;
+}
+
+.position-clock .minute-hand {
+    top: 17px;
+    left: 87px;
+}
+
+.position-clock .hour-hand {
+    top: 87px;
+    left: 74px;
+}
+
+/* другий спосіб */
+.transform-clock div {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.transform-clock .top-dot {
+    transform: translate(80px, 7px);
+}
+
+.transform-clock .right-dot {
+    transform: translate(153px, 80px);
+}
+
+.transform-clock .bottom-dot {
+    transform: translate(80px, 153px);
+}
+
+.transform-clock .left-dot {
+    transform: translate(7px, 80px);
+}
+
+.transform-clock .minute-hand {
+    transform: translate(87px, 17px);
+}
+
+.transform-clock .hour-hand {
+    transform: translate(74px, 87px);
+}
